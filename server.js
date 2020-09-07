@@ -22,7 +22,7 @@ db.select('*').from('users').then(data => {
     console.log(data);
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
